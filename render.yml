@@ -2,16 +2,16 @@ services:
   - type: web
     name: ai-resume-client
     env: node
-    buildCommand: cd client && npm install && npm run build
-    startCommand: npm run preview
-    staticPublishPath: client/dist
     rootDir: client
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    staticPublishPath: dist
     plan: free
 
   - type: web
     name: ai-resume-server
     env: node
-    buildCommand: cd server && npm install
-    startCommand: node server.js
     rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
     plan: free
