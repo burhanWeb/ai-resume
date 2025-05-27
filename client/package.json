@@ -15,7 +15,10 @@
     "@mui/material": "^6.4.7",
     "axios": "^1.8.3",
     "html2canvas": "^1.4.1",
+<<<<<<< HEAD
     "install": "^0.13.0",
+=======
+>>>>>>> 99436b0bbaf9e5582fbed4fc3e6505a91c0bb242
     "jspdf": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
