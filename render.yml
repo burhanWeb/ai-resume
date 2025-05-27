@@ -1,22 +1,17 @@
 services:
   - type: web
-    name: client
-    env: static
+    name: ai-resume-client
+    env: node
+    buildCommand: cd client && npm install && npm run build
+    startCommand: npm run preview
+    staticPublishPath: client/dist
     rootDir: client
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    envVars:
-      - key: NODE_VERSION
-        value: 20
+    plan: free
 
   - type: web
-    name: server
+    name: ai-resume-server
     env: node
+    buildCommand: cd server && npm install
+    startCommand: node server.js
     rootDir: server
-    buildCommand: npm install
-    startCommand: node server.js # Change to `npm start` if that's in your package.json
-    envVars:
-      - key: NODE_VERSION
-        value: 20
-      - key: PORT
-        value: 10000
+    plan: free
