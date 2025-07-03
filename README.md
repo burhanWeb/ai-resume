@@ -1,31 +1,27 @@
-# 🤖 AI Resume Builder – Smart Resume Generator using Gemini API
+AI Resume Builder – Smart Resume Generator using Gemini API
+The AI Resume Builder is a full-stack web application that helps users create professional resumes using AI. It uses the Google Gemini API to generate personalized job summaries, skills, and bullet points based on user input. Users can export their resumes as clean, print-ready PDFs.
 
-The **AI Resume Builder** is a full-stack web app that helps users generate professional resumes using AI. It leverages the **Google Gemini API** to suggest personalized content such as job summaries, skills, and bullet points based on user input. Users can export their resume as a clean, print-ready PDF.
+Features
+Fill in basic user and job details
 
----
+AI-powered content suggestions
 
-## 🚀 Features
+Real-time resume preview
 
-- ✍️ Fill in basic user and job details
-- 💡 AI-powered suggestions for each section
-- 📄 Real-time preview of resume
-- 🖨️ Export as PDF or print directly
-- 🧠 Uses Google Gemini API for content generation
-- 🧰 Built with full-stack architecture (React + Node.js)
+Export resume as PDF or print directly
 
----
+Built with React and Node.js
 
-## 🧠 System Architecture
+System Architecture
 
-```txt
 Frontend (React)
    ↓
 User Inputs Resume Details
    ↓
 Backend (Node.js + Express)
    ↓
-Gemini API → Generates Text
+Google Gemini API generates content
    ↓
-Returns Suggestions to UI
+Backend returns suggestions to frontend
    ↓
-PDF Export / Print Option
+User finalizes resume → Export or print
